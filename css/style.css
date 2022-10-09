@@ -7,7 +7,7 @@
 .hero{
   height:100vh;
   weight:100%;
-  background-img:url(test1.jpg);
+  background-image:url("test1.jpg");
   background-size:cover;
   background-postion:center;
 }
