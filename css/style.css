@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .hero{
-  height: 100px;
+  height: 100vh;
   weight: 100%;
   background: #000000;
   background-size: cover;
