@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+section h1{
+    margin-bottom: 1.5%;
+}
+section i{
+    font-size: 150px;
+    color:  black;
+    transition: all .55s ease;
+}
+section button{
+    cursor: pointer;
+    background: transparent;
+}
+section i:hover{
+    transform: translateY(-5px);
+    color: #333;
+}
+p{
+    border: 2px solid black;
+    display: none;
+    min-width: 550px;
+    letter-spacing: 1.7px;
+    padding: 5%;
+    text-align: start;
+    font-size: 2rem;
+    border-radius: 5%;
+}
+.ads{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 800px) {
+    section{
+        margin: 100px 30px 100px 30px;
+    }
+    p{
+        min-width: 95%;
+        padding: 2%;
+        font-size: 3rem;
+    }
+}
