@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatisnext</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <section>
+        <h1>What You Should Do Next ?</h1>
+        <h2>Press The Button Bellow </h2>
+        <a onclick="reply()"><i class='bx bx-skip-next-circle' > </i></a>
+        <p id="answer" ></p>
+    </section>
+    <script>
+        fetch('https://www.boredapi.com/api/activity')
+        .then(response => response.json())
+	    .then(data => res=data["activity"])
+        function reply() {
+            fetch('https://www.boredapi.com/api/activity')
+            .then(response => response.json())
+	        .then(data => res=data["activity"])
+          if (1===1) {
+            document.getElementById("answer").style.display="block";
+            document.getElementById("answer").innerHTML = res;
+          }
+        }
+        </script>
+    <div class="ads">
+        <script data-cfasync='false' type='text/javascript' src='//p453799.clksite.com/adServe/banners?tid=453799_887736_0'></script>
+    </div>
+</body>
+</html>
