@@ -1,0 +1,97 @@
+*{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: sans-serif;
+}
+body{
+    background-color: #141414;
+}
+.homepage{
+    color: white;
+    width: 100%;
+    background-color: #141414;
+    
+}
+.textzone{
+    margin: 8% 0 3% 10%;
+    padding-bottom: 5%;
+    width: 80%;
+    border-bottom: solid  blueviolet;
+}
+.homepage h4{
+    font-size: 4rem;
+}
+.homepage h3{
+    letter-spacing: 160%;
+    line-height: 160%;
+    margin-top: 2%;
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-bottom: 5%;
+}
+.homepage a{
+    font-size: 1.5rem;
+    padding: 1%;
+    border-radius: 10%;
+    color: #333;
+    border: 2px solid blueviolet;
+    transition: all .45s ease;
+    
+}
+.homepage a:hover{
+    transform: translateY(-5px);
+    color: aliceblue;
+    background-color: blueviolet;
+}
+strong{
+    color: blueviolet;
+}
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+  
+@media screen and (max-width: 800px) 
+{
+    .homepage h4{
+        font-size: 3rem;
+    }
+    .homepage h3{
+        font-size: 1.4rem;
+        padding-bottom: 2%;
+    }
+    .homepage a{
+        padding: 3%;
+        font-size: 1.4rem;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .homepage h4{
+        font-size: 3rem;
+    }
+    .homepage h3{
+        font-size: 1.1rem;
+        padding-bottom: 5%;
+    }
+    .homepage a{
+        padding: 2%;
+        font-size: 1rem;
+    }
+}

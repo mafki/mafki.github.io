@@ -1,0 +1,53 @@
+.chart-h{
+    display: flex;
+    align-items: center;
+    width: 70%; 
+}
+.chart {
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 50px 25px 20px 0;
+    display: block;
+    height: 140px;
+    width: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: hidden;   
+}
+
+.chart svg{
+    height: 48px;
+    margin: 15px;
+    width: 90%;
+    text-align: center;
+}
+.chart i{
+    font-size: 1.8rem;
+    margin: 15px;
+}
+@media screen and (max-width: 1100px) {
+    .chart-h{
+        width: 100%;
+        max-width: 800px;
+    }    
+}
+@media screen and (max-width: 800px) {
+    .chart-h{
+        width: 100%;
+    }
+    .chart{
+        width: 100%;
+    }
+    .chart i {
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .chart-h{
+        display: block;
+        width: 95%;
+    }
+    .chart{
+        margin: 10% 0 10% 4%;
+    }
+    
+}

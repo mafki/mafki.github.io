@@ -1,0 +1,82 @@
+.tools-b{
+    display: block;
+    width: 60%;
+}
+.sbox h2{
+    background: #333;
+    color: white;
+    width: 100%;
+    margin-bottom: 2%;
+    border: 1px solid black ;
+    padding: 2%;
+    font-size: 25px;
+}
+.box-items span{
+    font-size: 3.8rem;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+.sbox{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    border-radius: 2%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 2px solid black;
+}
+.box-items{
+    min-width: 200px;
+    border: 2px solid black;
+    min-height: 160px;
+    margin: 1% 1% 5% 2%;
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 1%;
+    border-radius: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all .55s ease;   
+}
+.box-items:hover{
+    background-color:  #ddd;
+    transform: translateY(-5px);
+}
+.box-items h4{
+    font-weight: bold;
+}
+.box-items h5{
+    padding-bottom: 30%;
+}
+@media screen  and (max-width: 1200px) and (min-width: 1100px){
+    .box-items span{
+        font-size: 2.7rem;
+    }
+    
+}
+@media screen and (max-width: 1100px){
+    .tools-b{
+        width: 91%;
+    }
+    .box-items span{
+        font-size: 3rem;
+    }
+    .box-items h5{
+        font-size: 0.6rem;
+    }    
+}
+@media screen and (max-width: 600px) {
+    .sbox{
+        justify-content: center;
+    }
+    .box-items{
+        display: block;
+        width: 90%;
+        padding-top: 10%;
+        margin-top: 5%;
+    }
+    .box-items h5{
+        font-size: 0.7rem;
+    }
+}

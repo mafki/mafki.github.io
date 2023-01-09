@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont{
+    display: flex;
+    margin: 2% 0 3% 10%;
+    padding-bottom: 5%;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: solid blueviolet;
+}
+.projects{
+    width: 100%;
+    background-color: #141414;
+    color: white;
+}
+.itmes img{
+    width: 100%;
+    border-bottom: solid blueviolet;
+}
+.itmes{
+    border: 1px solid blueviolet;
+    background-color: #1e1e1e;
+    width: 30%;
+    overflow:hidden;
+    border-radius: 5%;
+    margin-top: 2%;
+    box-shadow: 0 3px 10px rgba(128, 0, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .45s ease;
+}
+.itmes h3{
+    font-size: 2rem;
+    padding: 5%;
+    
+}
+.itmes:hover {
+    transform: translateY(-10px);
+}
+.itmes h4{
+    font-weight: 100;
+    font-size: 1.2rem;
+    
+    color: #ccc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    background-color: grey;
+    transition: all .45s ease;
+}
+.itmes h4:hover{
+    color: aliceblue;
+    background-color: blueviolet;
+}
+.projects h2{
+    padding: 1% 0 0 10%;
+    font-size: 2.5rem;
+    
+
+}
+@media screen and (max-width: 800px) {
+    .projects h2 {
+        font-size: 2rem;
+    }
+    .itmes h3{ font-size: 1.5rem;}
+    .itmes h4 { font-size: 1rem;}
+}
+@media screen and (max-width: 600px) {
+    .itmes h3{ font-size: 1.6rem;}
+    .itmes h4 { font-size: 1rem;}
+    .itmes{
+        width: 70%;
+        margin-top: 10%;
+    }
+    .projects h2 {
+        font-size: 1.5rem;
+    }
+}

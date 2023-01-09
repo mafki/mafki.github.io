@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html { scroll-behavior: smooth;}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    font-style: italic;
+    width: 20%;
+}
+#upp{
+    position: fixed;
+    display: none;
+    z-index: 99;
+    top: 90%;
+    right: 5%;
+    font-size: 2.5rem;
+    color: blueviolet;
+    cursor: pointer;
+    transition: all .45s ease;
+}
+#upp:hover{
+    transform: translateY(-5px);
+    color: #fcfcfc;
+}
+.logo a{
+    color: aliceblue;
+}
+a { color: inherit; } 
+.navbar{
+    width: 60%;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    color: #fcfcfc;
+    font-size: 1.3rem;
+    margin-left: 10%;
+    transition: all .45s ease;
+    cursor: pointer;
+}
+ 
+li:hover {
+    transform: translateY(-5px);
+    color: blueviolet;
+}
+span{
+    color: blueviolet;
+}
+.gitbutton{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+.gitbutton a{
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .45s ease;
+}
+.gitbutton a:hover{
+    transform: translateY(-5px);
+    color: blueviolet;
+}
+.icon {
+    display: none;
+}
+#navmenu{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    z-index: 99;
+
+    
+}
+#navmenu a{
+    display: block;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 6%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 864px) {
+    .logo{
+        font-size: 2rem;
+    }
+    .navbar li{
+        font-size: 1rem;
+    }
+  
+}
+@media screen and (max-width: 664px) {
+    .navbar{
+        display: none;
+    }
+    header{
+        display:flex;
+        min-height: 50px;
+    }
+    .logo{
+        border: 1px solid black;
+        font-size: 2rem;
+        width: 30%;
+    }
+    .icon {
+        width: 10%;
+        color: aliceblue;
+        font-size: 2rem;
+        float: right;
+        display: block;
+    }
+    .gitbutton{
+        width: 60%;
+    }
+    .gitbutton a{
+        padding-left: 40%;
+        font-size: 1.6rem;
+    }
+    .navbar {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .logo{
+        font-size: 1.5rem;
+    }
+    .gitbutton a{
+        font-size: 1.3rem;
+    }
+    .icon{
+        font-size: 1.3rem;
+    }
+}
