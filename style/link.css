@@ -24,9 +24,8 @@
     background-color: white;
 }
 .link2 {
-    visibility: hidden;
     width: 100%;
-    display: flex;
+    display: none;
     
 }
 .link2 img{
@@ -49,7 +48,7 @@
         visibility: hidden;
     }
     .link2{
-        visibility: visible;
+        display: flex;
     }
     
 }
