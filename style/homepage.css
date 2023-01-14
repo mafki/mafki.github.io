@@ -37,7 +37,6 @@ body{
     border-radius: 10%;
     color: #ccc;
     background-color: grey;
-    border: 2px solid blueviolet;
     transition: all .45s ease;
     
 }
