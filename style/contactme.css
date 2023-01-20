@@ -11,7 +11,7 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: grey;
+    background-color: #a155e7;
     color: #ccc;
     padding: 12px 20px;
     border: none;
