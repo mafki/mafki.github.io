@@ -66,12 +66,34 @@
     
 
 }
+.eee{
+    display: flex;
+    width: 60%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+    
+}
+.eee a{
+    width: 90px;
+    text-align: center;
+}
 @media screen and (max-width: 800px) {
     .projects h2 {
         font-size: 2rem;
     }
     .itmes h3{ font-size: 1.5rem;}
     .itmes h4 { font-size: 1rem;}
+    .eee{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-between;
+        
+    }
+    .eee a{
+        width: 100%;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 600px) {
     .itmes h3{ font-size: 1.6rem;}
