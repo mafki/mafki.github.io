@@ -1,179 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mafki</title>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="./style/headerstyle.css">
-    <link rel="stylesheet" href="./style/homepage.css">
-    <link rel="stylesheet" href="./style/projects.css">
-    <link rel="stylesheet" href="./style/contactme.css">
-    <link rel="stylesheet" href="./style/link.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Amine Feki | Software Engineer, Computer Vision &amp; Autonomous Systems</title>
+<meta name="description" content="Portfolio of Mohamed Amine Feki, a software engineer in Sfax, Tunisia, with experience in ERP integration, production support and test automation, and research in computer vision and reinforcement learning.">
+<meta name="theme-color" content="#0e1018">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mohamed Amine Feki | Software Engineer, Computer Vision &amp; Autonomous Systems">
+<meta property="og:description" content="ERP integration, production support and test automation, alongside research in computer vision and reinforcement learning.">
+<link rel="canonical" href="https://mafki.github.io/">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style/main.css">
+<script src="js/nav.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="">
-                MA<span>FKI</span>
-            </a>
-        </div>
-        <div class="navbar" id="myTopnav">
-            <ul>
-                <li><a href="#about"><i class='bx bx-user-circle'></i> About Me</a></li>
-                <li><a href="#projects"><i class='bx bx-briefcase' ></i> My Projects</a></li>
-                <li><a href="#contact"><i class='bx bx-user-pin' ></i> Contact Me</a></li>
-            </ul>
-        </div>
-        <div class="gitbutton">
-            <a href="https://github.com/mafki" target="_blank"><i class='bx bxl-github bx-flashing' ></i> Github</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class='bx bx-bar-chart-alt bx-rotate-270' ></i>
-        </a>
-    </header>
-    <div onclick="topFunction()" id="upp"><a><i class='bx bx-up-arrow-circle bx-tada' ></i></a></div>
-    <script>
-        let mybutton = document.getElementById("upp");
-        console.log(mybutton);
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+<div class="bar wrap">
+<a class="brand" href="#top" aria-label="Mohamed Amine Feki, back to top">MA<span>FKI</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Primary">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a class="btn" href="https://github.com/mafki" target="_blank" rel="noopener">GitHub</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="hero-title">
+<div>
+<p class="eyebrow">Software Engineer · Sfax, Tunisia</p>
+<h1 id="hero-title">Building Software and Exploring Intelligent Systems.</h1>
+<p class="role">Software Engineer | Computer Vision &amp; Autonomous Systems</p>
+<p class="lead">I am a software engineer with experience in ERP integration, production support and test automation, alongside research in computer vision and reinforcement learning. I enjoy building practical software systems and exploring how AI can turn visual information into useful decisions.</p>
+<p class="actions"><a class="btn btn-primary" href="#projects">Explore My Projects</a><a class="btn" href="#contact">Contact Me</a></p>
+</div>
+<div class="scene" aria-hidden="true">
+<small>Illustration: detection and segmentation overlay</small>
+<div class="box b1"><b>vehicle</b></div>
+<div class="box b2"><b>drivable area</b></div>
+<div class="scan"></div>
+</div>
+</section>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+<section class="section wrap" id="about" aria-labelledby="about-h">
+<h2 id="about-h">About</h2>
+<div class="two">
+<div class="prose">
+<p>I am a software engineer at A2soft, where I build ERP integrations, connect point-of-sale software to fiscal platforms and handle production support. The work involves gathering requirements from customers, turning them into technical specifications and debugging systems that businesses depend on every day.</p>
+<p>Alongside this job, I am pursuing a Research Master's Degree in Computer Science and an Engineering Degree in Computer Engineering at the same time. My research centres on computer vision and reinforcement learning, and I work with Python, PyTorch, YOLOP and YOLOv8.</p>
+<p>I am interested in extending this work toward multimodal AI and vision-language models, which I am still learning about.</p>
+</div>
+<dl class="facts card">
+<dt>Based in</dt><dd>Sfax, Tunisia</dd>
+<dt>Currently</dt><dd>Software Engineer at A2soft</dd>
+<dt>Studying</dt><dd>Research Master's and Engineering Degree, concurrently</dd>
+<dt>Research focus</dt><dd>Computer vision and reinforcement learning</dd>
+</dl>
+</div>
+</section>
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-    </script>
-    
-    <div id="navmenu" style="visibility: hidden;">
-        <a href="#about"><i class='bx bx-user-circle'></i> About Me</a>
-        <a href="#projects"><i class='bx bx-briefcase' ></i> My Projects</a>
-        <a href="#contact"><i class='bx bx-user-pin' ></i> Contact Me</a>
-    </div>
-    <script>
-        function myFunction() {
-         var x = document.getElementById("navmenu");
-         if (x.style.visibility === "hidden") {
-                x.style.visibility="visible";
-            } else {
-                x.style.visibility = "hidden";
-            }
-        }
-    </script>
-    <section class="link">
-        <div class="li"><a href="https://www.linkedin.com/in/mafki/" target="_blank"><img src="./img/linkeicon.png" alt=""></a></div>
-        <div class="li"><a href="https://github.com/mafki" target="_blank"><img src="./img/github.png" alt=""></a></div>
-        <div class="li"><a href="https://tryhackme.com/p/mafki" target="_blank"><img src="./img/tryhackme.png" alt=""></a></div>
-    </section>
-    
-    <section class="homepage" id="about">
-        <div class="textzone">
-        <h4>Hello! <span class="wave">👋</span></h4>
-        <h3>Hello there! I'm Mohamed Amine Fki, a <strong>Software Engineering</strong> student, </strong>CTF enthusiast</strong>, and <strong>Web Developer</strong>. My journey has been fueled by a fascination with the intricate workings of the internet. I'm on a quest to understand how to build and, at times, break into its mysterious realm.</h3>
-        <a href="#contact"><i class='bx bx-envelope bx-tada' ></i> SAY HI</a>
-        
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <h2><i class='bx bx-briefcase'></i> My Projects</h2>
-        <div class="cont">
-            <div class="itmes">
-                <img src="./img/tk.jpg" alt="">
-                <h3>Isekai Portal</h3>
-                <div class="eee">
-                    <a href="https://isekaiportal.onrender.com" target="_blank">
-                        <h4>demo</h4>
-                    </a>
-                    <a href="https://github.com/mafki/isekaiportal" target="_blank">
-                        <h4>Github</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="itmes">
-                <img src="./img/is.png" alt="">
-                <h3>InfinitySports</h3>
-                <div class="eee">
-                    <a href="https://infinitysports.github.io" target="_blank">
-                        <h4>demo</h4>
-                    </a>
-                    <a href="https://github.com/InfinitySports/InfinitySports.github.io/tree/main" target="_blank">
-                        <h4>Github</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="itmes">
-                <img src="./img/oft.png" alt="">
-                <h3>OneForTool</h3>
-                <div class="eee">
-                    <a href="./projects/onefortool/index.html" target="_blank">
-                        <h4>demo</h4>
-                    </a>
-                    <a href="https://github.com/mafki/mafki.github.io/tree/main/projects/onefortool" target="_blank">
-                        <h4>Github</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="itmes">
-                <img src="./img/ac.png" alt="">
-                <h3>Angel Club</h3>
-                <div class="eee">
-                    <a href="./projects/angelclub/index.html" target="_blank">
-                        <h4>demo</h4>
-                    </a>
-                    <a href="https://github.com/mafki/mafki.github.io/tree/main/projects/angelclub" target="_blank">
-                        <h4>Github</h4>
-                    </a>
-                </div>
-            </div>
-            <div class="itmes">
-                <img src="./img/wysdn.png" alt="">
-                <h3>What's Next</h3>
-                <div class="eee">
-                    <a href="./projects/whatisnext/index.html" target="_blank">
-                        <h4>demo</h4>
-                    </a>
-                    <a href="https://github.com/mafki/mafki.github.io/tree/main/projects/whatisnext" target="_blank">
-                        <h4>Github</h4>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <h2><i class='bx bx-user-pin' ></i> Contact Me</h2>
+<section class="section wrap" id="experience" aria-labelledby="exp-h">
+<h2 id="exp-h">Experience</h2>
+<h3 class="group">Professional experience</h3>
+<ol class="timeline">
+<li>
+<p class="when">July 2024 – Present</p>
+<div>
+<h4>Software Engineer</h4>
+<p class="org">A2soft</p>
+<ul class="points">
+<li>Built an El Fatoora (Tunisia TradeNet) e-invoicing integration for the company's ERP using WLanguage.</li>
+<li>Integrated café and restaurant point-of-sale software with a fiscal cash-register platform.</li>
+<li>Developed an RFID-based truck-weighing workflow.</li>
+<li>Resolved <strong>more than 15 production support tickets per week</strong>.</li>
+<li>Gathered customer requirements and translated them into technical specifications.</li>
+</ul>
+</div>
+</li>
+<li>
+<p class="when">February 2024 – July 2024</p>
+<div>
+<h4>Software Engineer Intern</h4>
+<p class="org">Digitalberry</p>
+<ul class="points">
+<li>Built a Selenium WebDriver test-automation framework to extract and validate XPath values, <strong>reducing manual testing time by 50%</strong>.</li>
+</ul>
+</div>
+</li>
+</ol>
+<h3 class="group">Academic research</h3>
+<div class="research card">
+<h4>Research Master's Degree in Computer Science</h4>
+<p>University of Sfax · in progress, expected December 2026</p>
+<p>Research focus: computer vision and reinforcement learning.</p>
+</div>
+</section>
 
-    <section class="contact" id="contact">
-        <div class="container">
-             <form action="https://formspree.io/f/moqzqpoe"  method="POST" >
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
-          </div>
-    </section>
-    <section class="link2">
-        <div class="li2"><a href="https://www.linkedin.com/in/mafki/" target="_blank"><img src="./img/linkeicon.png" alt=""></a></div>
-        <div class="li2"><a href="https://github.com/mafki" target="_blank"><img src="./img/github.png" alt=""></a></div>
-        <div class="li2"><a href="https://tryhackme.com/p/mafki" target="_blank"><img src="./img/tryhackme.png" alt=""></a></div>
-    </section>
+<section class="section wrap" id="projects" aria-labelledby="proj-h">
+<h2 id="proj-h">Projects</h2>
+<ul class="cards">
+<li><article class="card project">
+<img src="img/tk.jpg" alt="Preview image for Isekai Portal" width="624" height="624" loading="lazy" decoding="async">
+<div class="body">
+<h3>Isekai Portal</h3>
+<p class="status">Live demo hosted on Render</p>
+<p>React front end for browsing and searching an anime catalogue, with user accounts, favourites and reviews, as described in its README.</p>
+<ul class="tags"><li>React</li></ul>
+<p class="links"><a href="https://isekaiportal.onrender.com" target="_blank" rel="noopener" aria-label="Isekai Portal live demo">Live demo</a><a href="https://github.com/mafki/isekaiportal" target="_blank" rel="noopener" aria-label="Isekai Portal source code">Source code</a></p>
+</div>
+</article></li>
+<li><article class="card project">
+<img src="img/is.png" alt="Preview image for InfinitySports" width="624" height="624" loading="lazy" decoding="async">
+<div class="body">
+<h3>InfinitySports</h3>
+<p class="status">Live demo on GitHub Pages</p>
+<p>Sports website published from the InfinitySports GitHub organisation.</p>
+<p class="links"><a href="https://infinitysports.github.io" target="_blank" rel="noopener" aria-label="InfinitySports live demo">Live demo</a><a href="https://github.com/InfinitySports/InfinitySports.github.io/tree/main" target="_blank" rel="noopener" aria-label="InfinitySports source code">Source code</a></p>
+</div>
+</article></li>
+<li><article class="card project">
+<img src="img/oft.png" alt="Preview image for OneForTool" width="626" height="626" loading="lazy" decoding="async">
+<div class="body">
+<h3>OneForTool</h3>
+<p class="status">Page hosted in this portfolio</p>
+<p>Interface prototype for a hub of trading calculators, analysis tools and web utilities. The tool links are placeholders for now.</p>
+<ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+<p class="links"><a href="projects/onefortool/index.html" target="_blank" rel="noopener" aria-label="Open the OneForTool page">View page</a><a href="https://github.com/mafki/mafki.github.io/tree/main/projects/onefortool" target="_blank" rel="noopener" aria-label="OneForTool source code">Source code</a></p>
+</div>
+</article></li>
+<li><article class="card project">
+<img src="img/ac.png" alt="Preview image for Angel Club" width="620" height="620" loading="lazy" decoding="async">
+<div class="body">
+<h3>Angel Club</h3>
+<p class="status">Page hosted in this portfolio</p>
+<p>Website for a cultural club that brings Asian, anime and gaming communities together, with member profiles, event listings and contact links.</p>
+<ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+<p class="links"><a href="projects/angelclub/index.html" target="_blank" rel="noopener" aria-label="Open the Angel Club page">View page</a><a href="https://github.com/mafki/mafki.github.io/tree/main/projects/angelclub" target="_blank" rel="noopener" aria-label="Angel Club source code">Source code</a></p>
+</div>
+</article></li>
+<li><article class="card project">
+<img src="img/wysdn.png" alt="Preview image for What's Next" width="624" height="624" loading="lazy" decoding="async">
+<div class="body">
+<h3>What's Next</h3>
+<p class="status">Page hosted in this portfolio</p>
+<p>Single-page app that suggests a random activity from a public API each time you press the button.</p>
+<ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+<p class="links"><a href="projects/whatisnext/index.html" target="_blank" rel="noopener" aria-label="Open the What's Next page">View page</a><a href="https://github.com/mafki/mafki.github.io/tree/main/projects/whatisnext" target="_blank" rel="noopener" aria-label="What's Next source code">Source code</a></p>
+</div>
+</article></li>
+</ul>
+</section>
+
+<section class="section wrap" id="skills" aria-labelledby="skills-h">
+<h2 id="skills-h">Technical skills</h2>
+<div class="focus card">
+<h3>AI and Computer Vision</h3>
+<ul class="primary"><li>Python</li><li>PyTorch</li><li>YOLOP</li><li>YOLOv8</li><li>Object detection</li><li>Semantic segmentation</li><li>Reinforcement learning</li></ul>
+<p class="also">Also: CNN-LSTM, Double DQN, CARLA, Weights &amp; Biases</p>
+</div>
+<dl class="skill-grid">
+<div><dt>Programming languages</dt><dd>Python, Java, JavaScript, SQL, C, WLanguage</dd></div>
+<div><dt>Web development</dt><dd>React, Node.js, Express.js, Angular, Django, Bootstrap</dd></div>
+<div><dt>Databases</dt><dd>PostgreSQL, MongoDB, HFSQL Server</dd></div>
+<div><dt>Tools and testing</dt><dd>Git, Docker, Jenkins, Selenium WebDriver, XPath, Jira</dd></div>
+</dl>
+</section>
+
+<section class="section wrap" id="education" aria-labelledby="edu-h">
+<h2 id="edu-h">Education</h2>
+<ul class="edu">
+<li class="card"><p class="when">Expected December 2026</p><div><h3>Research Master's Degree in Computer Science</h3><p>University of Sfax · in progress</p></div></li>
+<li class="card"><p class="when">Expected May 2027</p><div><h3>Engineering Degree in Computer Engineering</h3><p>North American Private University · in progress</p></div></li>
+<li class="card"><p class="when">Completed May 2024</p><div><h3>Bachelor's Degree in Computer Science</h3><p>University of Sfax</p></div></li>
+</ul>
+<p class="note">I am pursuing the Research Master's Degree and the Engineering Degree concurrently.</p>
+</section>
+
+<section class="section wrap" id="contact" aria-labelledby="contact-h">
+<h2 id="contact-h">Contact</h2>
+<div class="two">
+<div class="prose">
+<p>I am looking for a final-year internship in computer vision, applied AI or software engineering. The quickest way to reach me is by email.</p>
+<ul class="contact-list">
+<li><span>Email</span><a href="mailto:fki.m.amine@gmail.com">fki.m.amine@gmail.com</a></li>
+<li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mafki/" target="_blank" rel="noopener">linkedin.com/in/mafki</a></li>
+<li><span>GitHub</span><a href="https://github.com/mafki" target="_blank" rel="noopener">github.com/mafki</a></li>
+</ul>
+</div>
+<form class="card" action="https://formspree.io/f/moqzqpoe" method="POST">
+<div class="name-row">
+<label for="fname">First name<input type="text" id="fname" name="firstname" autocomplete="given-name" required></label>
+<label for="lname">Last name<input type="text" id="lname" name="lastname" autocomplete="family-name" required></label>
+</div>
+<label for="email">Email<input type="email" id="email" name="email" autocomplete="email" required></label>
+<label for="message">Message<textarea id="message" name="message" required></textarea></label>
+<button class="btn btn-primary" type="submit">Send message</button>
+<p class="fine">Messages are delivered through Formspree. If the form does not work, please email me directly.</p>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer wrap">
+<p>© 2026 Mohamed Amine Feki · Sfax, Tunisia</p>
+<p><a href="mailto:fki.m.amine@gmail.com">Email</a><a href="https://www.linkedin.com/in/mafki/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/mafki" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
 </body>
-<footer><p class="copyright">Crafted with  <i style="color: red;" class='bx bxs-heart'></i></p></footer>
 </html>
